@@ -6,7 +6,7 @@ from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
 from pymongo import MongoClient
 from dotenv import load_dotenv
-import time
+from sleep_helper import SleepHelper
 
 # Load environment variables from .env file
 load_dotenv()
@@ -14,7 +14,7 @@ MONGO_DB_URL = os.getenv("MONGO_DB_URL")
 
 # Setup Chrome options
 chrome_options = Options()
-chrome_options.add_argument("--headless")  # Ensure GUI is off
+# chrome_options.add_argument("--headless")  # Ensure GUI is off
 chrome_options.add_argument("--no-sandbox")
 chrome_options.add_argument("--disable-dev-shm-usage")
 
@@ -36,7 +36,7 @@ num_pages = 10
 for page in range(num_pages):
     url = f'{base_url}&start={page * 10}'
     driver.get(url)
-    time.sleep(3)  # wait for the page to load
+    SleepHelper.random_sleep(12, 2)   # wait for the page to load
 
     # Find all job postings
     job_postings = driver.find_elements(By.CLASS_NAME, 'job_seen_beacon')
@@ -46,7 +46,7 @@ for page in range(num_pages):
         try:
             # Click the job to view details
             job.click()
-            time.sleep(2)  # wait for the details panel to load
+            SleepHelper.random_sleep(15, 3)  # wait for the details panel to load
 
             # Extract job title
             title_elem = job.find_element(By.CLASS_NAME, 'jobTitle')
@@ -89,6 +89,7 @@ for page in range(num_pages):
 
             # Create a dictionary to store the job data
             job_data = {
+                'source': 'indeed',
                 'title': title,
                 'company': company,
                 'location': location,
