@@ -1,0 +1,62 @@
+{
+  "Software Development": [
+    "Software Engineer",
+    "Software Developer",
+    "Front-End Developer",
+    "Back-End Developer",
+    "Full-Stack Developer",
+    "Mobile Developer",
+    "Web Developer",
+    "Embedded Systems Engineer",
+    "DevOps Engineer",
+    "Test Automation Engineer"
+  ],
+  "Data Science and Analytics": [
+    "Data Scientist",
+    "Data Analyst",
+    "Data Engineer",
+    "Machine Learning Engineer",
+    "Business Intelligence Analyst",
+    "Big Data Engineer",
+    "AI Engineer"
+  ],
+  "IT and Network Administration": [
+    "IT Support Specialist",
+    "Network Administrator",
+    "System Administrator",
+    "IT Technician",
+    "Help Desk Technician",
+    "Database Administrator (DBA)",
+    "Cloud Engineer"
+  ],
+  "Project Management and Business Analysis": [
+    "Project Manager",
+    "Scrum Master",
+    "Product Manager",
+    "Business Analyst",
+    "Technical Project Manager",
+    "Agile Coach"
+  ],
+  "Cybersecurity": [
+    "Cybersecurity Analyst",
+    "Information Security Analyst",
+    "Security Engineer",
+    "Penetration Tester",
+    "Security Consultant",
+    "Cybersecurity Specialist"
+  ],
+  "UX/UI Design and Product Design": [
+    "UX Designer",
+    "UI Designer",
+    "Product Designer",
+    "Interaction Designer",
+    "UX Researcher"
+  ],
+  "Other Technical Roles": [
+    "Technical Support Engineer",
+    "Software Architect",
+    "QA Engineer",
+    "Technical Writer",
+    "Release Manager"
+  ]
+}
