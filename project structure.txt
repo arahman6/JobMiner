@@ -1,0 +1,37 @@
+project/
+│
+├── scrapers/
+│   ├── __init__.py
+│   ├── scraping_strategy.py
+│   ├── indeed_scraper.py
+│   ├── linkedin_scraper.py
+│   └── scraper_factory.py
+│
+├── decorators/
+│   ├── __init__.py
+│   ├── scraper_decorator.py
+│   ├── logging_scraper_decorator.py
+│   └── error_handling_scraper_decorator.py
+│
+├── observers/
+│   ├── __init__.py
+│   ├── observable.py
+│   ├── observer.py
+│   ├── database_updater.py
+│   └── notifier.py
+│
+├── utils/
+│   ├── __init__.py
+│   ├── singleton.py
+│   ├── config_manager.py
+│   └── logger.py
+│
+├── facades/
+│   ├── __init__.py
+│   └── scraping_facade.py
+│
+├── templates/
+│   ├── __init__.py
+│   └── base_scraper.py
+│
+└── main.py
